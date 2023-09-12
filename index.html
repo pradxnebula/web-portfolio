@@ -15,18 +15,29 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link id="theme-link" rel="stylesheet" href="dark-mode.css">
   <!--
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="toggle-pill">
+    <label class="toggle">
+      <input type="checkbox" id="theme-toggle">
+      <div class="slider" id="head-let"></div>
+    </label>
+  </div>
 
+
+  <!-- <img src="light-mode.png" alt="" style="width: 26px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 3px;"> -->
   <!--
     - #MAIN
   -->
@@ -37,16 +48,18 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar toggleColor" id="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/avatar-2.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/avatar-1.png" alt="Richard hanrick" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Muskan Goyal</h1>
+          <h1 class="name" title="Richard hanrick">Pradhyum</h1>
+
+
 
           <p class="title">Tech Freak</p>
         </div>
@@ -67,19 +80,19 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
+            <div class="icon-box toggleColor">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">itsmuskangoyal07@gmail.com</a>
+              <a href="mailto:richard@example.com" class="contact-link">pradhyum.23538@sscbs.du.ac.in</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <li class="contact-item toggleColor">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -88,7 +101,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+91 7988484525</a>
+              <a href="tel:+12133522795" class="contact-link">+91 7983001663</a>
             </div>
 
           </li>
@@ -102,7 +115,7 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">Aug 6, 2004</time>
+              <time datetime="1982-06-23">Jul 25, 2004</time>
             </div>
 
           </li>
@@ -159,7 +172,7 @@
       - #main-content
     -->
 
-    <div class="main-content">
+    <div class="main-content" id="sidebar">
 
       <!--
         - #NAVBAR
@@ -209,12 +222,23 @@
 
         <section class="about-text">
           <p>
-            Hello world! 🌍 I'm a developer and programmer hailing from the vibrant city of New Delhi, India. My professional journey has led me into the fascinating realms of finance, data analytics, and AI. I'm not just someone who works with code; I'm an enthusiast who thrives on learning new technologies and continually upgrading my tech stack. Currently, I am pursuing my Bachelor's degree in Computer Science and Engineering from the University of Delhi. I'm also Event Lead of the Google Developer Student Club, where I'm actively involved in organizing and participating in various tech events.
+            Welcome to my tech portfolio website! I am a passionate and dedicated web developer with a strong foundation
+            in HTML, CSS, and little bit of JavaScript. My journey in the world of technology has been marked by a
+            continuous pursuit of knowledge and a commitment to staying at the forefront of web development trends.
           </p>
 
           <p>
-            My mission in this ever-evolving tech landscape is to explore, experiment, and build innovative solutions that can contribute positively to society and communities. As a perpetual student of technology, I'm always eager to collaborate, learn, and grow. You'll often find me participating in hackathons, where I relish the opportunity to work with like-minded individuals on exciting and impactful projects. Let's hack the future together! 💻🚀
+            My expertise extends to the utilization of popular frameworks such as Tailwind CSS and Bootstrap, allowing
+            me to craft elegant and responsive web interfaces that enhance user experiences. I am also currently delving
+            into the exciting realm of React and Django, seeking to expand my skill set and tackle even more complex
+            projects in the near future. 
           </p>
+          <p>Beyond my technical prowess, I am an avid enthusiast of mind sports, including table tennis and chess.
+            These hobbies not only sharpen my strategic thinking but also instill in me the qualities of patience,
+            precision, and adaptability, which I bring to my work as a developer.</p>
+          <p>I am excited about the endless possibilities that lie ahead in the world of web development and look
+            forward to collaborating on innovative and impactful projects. Thank you for visiting, and I hope you enjoy
+            exploring my work! 💻🚀</p>
         </section>
 
 
@@ -236,9 +260,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Development</h4>
+                <h4 class="h4 service-item-title" id="head-col">Web Development</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" id="head-col">
                   High-quality development of sites at the professional level.
                 </p>
               </div>
@@ -252,9 +276,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title"> Programming </h4>
+                <h4 class="h4 service-item-title" id="head-col"> Programming </h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" id="head-col">
                   Languages like Python, JS, CPP, Java.
                 </p>
               </div>
@@ -268,9 +292,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI & ML</h4>
+                <h4 class="h4 service-item-title" id="head-col">AI & ML</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" id="head-col">
                   Projects related to AI, ML and Data Analytics.
                 </p>
               </div>
@@ -284,9 +308,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title" id="head-col">Photography</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" id="head-col">
                   I make high-quality photos of any category at a professional level.
                 </p>
               </div>
@@ -315,11 +339,13 @@
                   <img src="./assets/images/my-avatar.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vaibhav Srivastava </h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title id="head-col">Vaibhav Srivastava </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Muskan has consistently demonstrated outstanding contributions to society. Her adept decision-making skills and exceptional leadership qualities have greatly benefited all the society members.
+                  <p id="head-col">
+                    Pradhyum has consistently demonstrated outstanding contributions to society. Her adept
+                    decision-making
+                    skills and exceptional leadership qualities have greatly benefited all the society members.
                   </p>
                 </div>
 
@@ -333,11 +359,12 @@
                   <img src="./assets/images/avatar-1.png" alt="Jessica miller" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vinit Vijal </h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title id="head-col">Vinit Vijal </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Muskan Goyal is a fantastic coder. She's really good at making computer stuff work. She's also a role model for girls who want to do the same. Go Muskan Goyal!
+                  <p id="head-col">
+                    Pradhyum is a fantastic coder. She's really good at making computer stuff work. She's also a
+                    role model for girls who want to do the same. Go Muskan Goyal!
                   </p>
                 </div>
 
@@ -351,11 +378,12 @@
                   <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title id="head-col">Emily evans</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  <p id="head-col">
+                    Pradhyum was hired to create a corporate identity. We were very pleased with the work done. She has
+                    a
                     lot of experience
                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
                     consectetur adipiscing
@@ -373,11 +401,12 @@
                   <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title id="head-col">Henry william</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  <p id="head-col">
+                    Pradhyum was hired to create a corporate identity. We were very pleased with the work done. She has
+                    a
                     lot of experience
                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
                     consectetur adipiscing
@@ -523,34 +552,26 @@
               <span>2022-2025</span>
 
               <p class="timeline-text">
-                Asia's Top Rank College. Best infrastructure and faculty members. I am pursuing my Bachelors in Computer Science from here. 
+                Asia's Top Rank College. Best infrastructure and faculty members. I am pursuing my Bachelors in Computer
+                Science from here.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Vaish School</h4>
+              <h4 class="h4 timeline-item-title">Central Board of Secondary Education</h4>
 
               <span>2020-2022</span>
 
               <p class="timeline-text">
-                Most disciplined school in my Hometown. Best for academics and sports. I got 98% in my Junior College and got District Rank 1.
+                Most disciplined school in my Hometown. Best for academics and sports. I got 98% in my Junior College
+                and got District Rank 1.
               </p>
 
             </li>
 
-            <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title"> J.D.K.D.E.S </h4>
-
-              <span>2016-2020</span>
-
-              <p class="timeline-text">
-                The place where I learnt to explore new things, developed my soft skills and got to know about my interests. Made the best memories of my life here and closest friends as well.
-              </p>
-
-            </li>
 
           </ol>
 
@@ -587,23 +608,12 @@
               <span>2021 - Present</span>
 
               <p class="timeline-text">
-                Making websites using HTML, CSS, JS, Bootstrap, React etc. Projects for portfolio and Pitches for Hackathons.
+                Making websites using HTML, CSS, JS, Bootstrap, React etc. Projects for portfolio and Pitches for
+                Hackathons.
               </p>
 
             </li>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Data Analyst</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                Machine Learning models for Personal Projects. Research Intern under Phd Professor for Data Analytics.
-                Power BI for Data Visualization.
-              </p>
-
-            </li>
 
           </ol>
 
@@ -618,8 +628,8 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
+                <h5 class="h5" id="head-col">Web design</h5>
+                <data value="80" id="head-col">80%</data>
               </div>
 
               <div class="skill-progress-bg">
@@ -631,38 +641,38 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Programming</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analysis</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Finance</h5>
-                <data value="50">50%</data>
+                <h5 class="h5" id="head-col">Programming</h5>
+                <data value="70" id="head-col">50%</data>
               </div>
 
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" id="head-col">Data Analysis</h5>
+                <data value="70" id="head-col">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" id="head-col">Finance</h5>
+                <data value="50" id="head-col">20%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 20%;"></div>
               </div>
 
             </li>
@@ -941,16 +951,16 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category" id="head-col">Design</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23" id="head-col">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title" id="head-col">Design conferences in 2022</h3>
 
-                  <p class="blog-text">
+                  <p class="blog-text" id="head-col">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p>
 
@@ -969,16 +979,16 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category" id="head-col">Design</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23" id="head-col">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title" id="head-col">Best fonts every designer</h3>
 
-                  <p class="blog-text">
+                  <p class="blog-text" id="head-col">
                     Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
                   </p>
 
@@ -997,16 +1007,16 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category" id="head-col">Design</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23" id="head-col">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title" id="head-col">Design digest #80</h3>
 
-                  <p class="blog-text">
+                  <p class="blog-text" id="head-col">
                     Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
                   </p>
 
@@ -1025,16 +1035,16 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category" id="head-col">Design</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23" id="head-col">Feb 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title" id="head-col">UI interactions of the week</h3>
 
-                  <p class="blog-text">
+                  <p class="blog-text" id="head-col">
                     Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
                   </p>
 
@@ -1053,16 +1063,16 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category" id="head-col">Design</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23" id="head-col">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <h3 class="h3 blog-item-title" id="head-col">The forgotten art of spacing</h3>
 
-                  <p class="blog-text">
+                  <p class="blog-text" id="head-col">
                     Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
 
@@ -1081,16 +1091,16 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category" id="head-col">Design</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23" id="head-col">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+                  <h3 class="h3 blog-item-title" id="head-col">Design digest #79</h3>
 
-                  <p class="blog-text">
+                  <p class="blog-text" id="head-col">
                     Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
                   </p>
 
@@ -1104,7 +1114,6 @@
         </section>
 
       </article>
-
 
 
 
@@ -1127,7 +1136,7 @@
           </figure>
         </section>
 
-        
+
 
         <section class="contact-form">
 
@@ -1156,6 +1165,7 @@
 
     </div>
 
+
   </main>
 
 
@@ -1163,9 +1173,7 @@
 
 
 
-  <!--
-    - custom js link
-  -->
+
   <script src="./assets/js/script.js"></script>
 
   <!--
@@ -1173,6 +1181,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js" defer></script>
 
 </body>
 
