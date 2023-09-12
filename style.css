@@ -1,0 +1,31 @@
+/* styles.css */
+.toggle {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .toggle input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #fff; /* Light mode background color */
+    transition: 0.4s;
+  }
+  
+  /* Styling for dark mode */
+  #theme-toggle:checked + .slider {
+    left: 50%;
+    background-color: #000; /* Dark mode background color */
+  }
+  
