@@ -24,5 +24,5 @@ By following these steps, I successfully integrated the dark-light mode toggle f
 
 Changed some basic profile info and manipulated 'My Skill' tab learning bars in `index.html`. Also modified some css to suit the visual interface for light mode in `light-mode.css`.
 <hr>
-The project is hosted at pradxnebula.github.io/web-portfolio
+The project is hosted at https://pradxnebula.github.io/web-portfolio/
 
